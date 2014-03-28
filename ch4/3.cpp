@@ -17,5 +17,6 @@ int main() {
 	cin >> name >> number >> sick >> vac >> unpaid;
 	TimeOff timeoff(name, number, sick, vac, unpaid);
 	cout << timeoff.getMaxSickDays().toDay() << endl;
+	cout << timeoff.getMaxVacation().toDay() << endl;
 	return 0;
 }
