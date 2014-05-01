@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -20,7 +21,8 @@ int main() {
 		fin.getline(content, 100, '\n');
 		cout << count << '\t' << content;
 		if (count % 24 == 0) {
-			cin.getline(content, 5, '\n');
+			/*cin.getline(content, 5, '\n');*/
+			system("pause");
 		}
 		cout << endl;
 	}
